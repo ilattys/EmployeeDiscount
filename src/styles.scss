@@ -1,1 +1,85 @@
-/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/scss/bootstrap";
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.main{
+  overflow: hidden;
+}
+.header {
+  height: unset !important;
+}
+.logo-blue {
+  background-color: #5882b9 !important;
+  color: white;
+}
+.logo-color{
+  color:  #5882b9;
+}
+.white-text {
+  color: white;
+}
+.custom-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.spacer {
+  flex: 1 1 auto;
+}
+.add-button{
+  background-color: transparent;
+  color: #fff;
+}
+
+// margins
+.ml-1{
+  margin-left: 1vh !important;
+}
+.mlr-1{
+  margin-left: 1vh !important;
+  margin-right: 1vh !important;
+}
+
+// spinner
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+.overlay{
+  height:100vh;
+  width:100%;
+  background-color:rgba(0, 0, 0, 0.286);
+  z-index:    10;
+  top:        0;
+  left:       0;
+  position:   fixed;
+}
+// fonts
+h1, h2, h3 {
+  font-weight: normal !important;
+}
+
+// expansion panel
+.mat-expansion-panel-header{
+  background: #5882b9 !important;
+}
+.mat-expansion-panel-header-title {
+  color: white;
+  padding-top: 5px;
+}
+.mat-expansion-panel-header.mat-expanded {
+  background: #5882b9 !important;
+}
+.mat-accordion .mat-expansion-panel:last-of-type {
+  margin-bottom: 1rem!important;
+}
+.mat-expansion-indicator::after {
+  color: white;
+}
+.mat-expansion-panel-body {
+  padding: 0 !important;
+}
