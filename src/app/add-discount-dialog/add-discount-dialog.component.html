@@ -1,0 +1,2 @@
+<button class="logo-blue white-text buttons" type="button" mat-raised-button (click)="csvReader.click()">Choose File</button>
+<input hidden (change)="uploadListener($event.target)" #csvReader type="file" accept=".csv" id="txtFileUpload">

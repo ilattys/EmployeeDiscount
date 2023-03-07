@@ -52,6 +52,7 @@ import {MatMenuModule} from '@angular/material/menu';
         BrowserAnimationsModule,
         MatToolbarModule,
         MatIconModule,
+        MatIconModule,
         MatDialogModule,
         TableModule,
         FormsModule,

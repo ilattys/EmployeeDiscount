@@ -1,0 +1,35 @@
+.buttons {
+  margin-right: 1vh;
+}
+.back-button {
+  background-color: #5882b9;
+  color: #fff;
+}
+.material-icons{
+  font-size: 30px !important;
+}
+.export-button {
+  background-color: transparent;
+  color: #fff;
+}
+table {
+  width: 100%;
+  table-layout: fixed;
+}
+th, td {
+  overflow: hidden;
+  width: 100px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+// formatting
+.pl-5 {
+  padding-left: 5vh;
+}
+.mr-5 {
+  margin-right: 3vh;
+}
+.mb-2{
+  margin-bottom: 1vh;
+}

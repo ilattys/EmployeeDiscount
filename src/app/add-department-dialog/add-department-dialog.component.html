@@ -1,0 +1,40 @@
+<h1 mat-dialog-title>Add Department Settings</h1>
+<mat-grid-list cols="4" rowHeight="50px">
+  <mat-grid-tile
+    *ngFor="let header of deptHeader"
+    [colspan]="header.cols"
+    [rowspan]="header.rows">
+    {{header.text}}
+  </mat-grid-tile>
+</mat-grid-list>
+<mat-grid-list class="mb-5" cols="4" rowHeight="25px">
+  <mat-grid-tile
+    [colspan]="1"
+    [rowspan]="1">
+    <input class="small" matInput [(ngModel)]="data.deptNo">
+  </mat-grid-tile>
+  <mat-grid-tile
+    [colspan]="1"
+    [rowspan]="1">
+    <mat-checkbox [(ngModel)]="data.half"
+                  [color]="color">
+    </mat-checkbox>
+  </mat-grid-tile>
+  <mat-grid-tile *ngIf="wardrobeDiscount"
+    [colspan]="1"
+    [rowspan]="1">
+    <mat-checkbox [(ngModel)]="data.female"
+                  [color]="color">
+    </mat-checkbox>
+  </mat-grid-tile>
+  <mat-grid-tile *ngIf="wardrobeDiscount"
+    [colspan]="1"
+    [rowspan]="1">
+    <mat-checkbox [(ngModel)]="data.male"
+                    [color]="color">
+    </mat-checkbox>
+  </mat-grid-tile>
+</mat-grid-list>
+
+<button mat-flat-button (click)="verifySettings()" class="add-dep-button buttons">Add</button>
+<button mat-flat-button (click)="closeDialog()" class="cancel-button buttons">Cancel</button>
